@@ -17,3 +17,9 @@ npx vite
 ```
 npx vite build
 ```
+$ npm list
+├── @vituum/vite-plugin-postcss@1.1.0
+├── @vituum/vite-plugin-posthtml@1.1.0
+├── sass@1.75.0
+├── vite@5.2.0
+└── vituum@1.1.0
