@@ -7,13 +7,13 @@ export default defineConfig({
   root: './src',
 
   plugins: [
-    vituum({
-      pages: ['html/pages/**/*.html']
-    }),
-    postcss(),
+    vituum(),
     posthtml({
-      root: './src/html/pages'
+      root: './src'
     })
+
+
+
   ],
 
   build: {
@@ -21,4 +21,7 @@ export default defineConfig({
     emptyOutDir: true
   }
 })
+
+
+
 //24.41
