@@ -53,7 +53,6 @@
     "vite": "7.3.0",
     "vite-plugin-image-optimizer": "2.0.3",
     "@vituum/vite-plugin-posthtml": "1.1.0",
-    "vituum": "1.1.0",
     "vite-plugin-sass-glob-import": "6.0.2"
   },
   "browserslist": [
