@@ -1,0 +1,97 @@
+.color-accent {
+  color: var(--color-pink);
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.copy {
+  font-size: 14px;
+  color: var(--color-light-gray);
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-white);
+  background-image: url('/src/assets/images/footer-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  &__copy {
+    padding-top: 40px;
+  }
+}
+
+.footer-details {
+  .logo {
+    display: block;
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.insta-blog {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.contacts {
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.subscribe-form {
+  margin-bottom: 20px;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-white);
+    border-radius: 6px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 18px;
+    outline: 0;
+  }
+
+  &__button {
+    width: 60px;
+    height: 50px;
+    padding: 18px 20px;
+    background-color: var(--color-white);
+    mask-image: var(--icon-email);
+    mask-size: 24px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}

@@ -1,0 +1,15 @@
+.soc1al {
+  display: flex;
+  gap: 15px;
+
+  // &__item {
+  // }
+
+  &__link {
+    &::before {
+      width: 15px;
+      height: 15px;
+      background-color: var(--color-light-gray);
+    }
+  }
+}

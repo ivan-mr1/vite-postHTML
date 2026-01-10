@@ -1,0 +1,42 @@
+.header {
+  color: var(--color-white);
+  background-color: #212223;
+}
+
+.header-top {
+  border: 1px solid var(--color-white);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 12px;
+  }
+}
+
+.contact-info {
+  display: flex;
+  gap: 40px;
+
+  &__link {
+    background-color: var(--color-light-gray);
+  }
+}
+
+.header-bottom {
+  padding: 30px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    font-weight: 300;
+  }
+}

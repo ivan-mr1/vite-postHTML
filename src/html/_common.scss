@@ -1,0 +1,53 @@
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: currentColor;
+  }
+}
+
+.icon-location {
+  &::before {
+    mask-image: var(--icon-location);
+  }
+}
+
+.icon-phone {
+  &::before {
+    mask-image: var(--icon-phone);
+  }
+}
+
+.icon-fb {
+  &::before {
+    mask-image: var(--icon-fb);
+  }
+}
+
+.icon-insta {
+  &::before {
+    mask-image: var(--icon-insta);
+  }
+}
+
+.icon-x {
+  &::before {
+    mask-image: var(--icon-x);
+  }
+}
+
+.icon-youtube {
+  &::before {
+    mask-image: var(--icon-youtube);
+  }
+}
+
+// 36-39
