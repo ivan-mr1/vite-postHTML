@@ -1,27 +1,21 @@
-import { defineConfig } from 'vite'
-import vituum from 'vituum'
-import posthtml from '@vituum/vite-plugin-posthtml'
-import postcss from '@vituum/vite-plugin-postcss'
+import vituum from 'vituum';
+import posthtml from '@vituum/vite-plugin-posthtml';
+import { defineConfig } from 'vite';
+import SassGlob from 'vite-plugin-sass-glob-import';
+import { imageOptimizerPlugin } from './vite-plugins/image-optimizer';
+import { buildConfig } from './vite-plugins/build-config';
 
 export default defineConfig({
-  root: './src',
-
+  base: './',
   plugins: [
     vituum(),
     posthtml({
-      root: './src'
-    })
-
-
-
+      root: './src',
+    }),
+    SassGlob(),
+    imageOptimizerPlugin(),
   ],
+  build: buildConfig,
+});
 
-  build: {
-    outDir: '../dist',
-    emptyOutDir: true
-  }
-})
-
-
-
-//24.41
+//27.41
